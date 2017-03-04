@@ -49,7 +49,7 @@
                             <th height=1px; width="150px"><center><img src="https://openclipart.org/image/2400px/svg_to_png/245232/3d-Isometric-Intertwined-Gender-Hearts.png&disposition=attachment" height="30px" width="30px"/>  Пол</center></th>
                             <th height=1px; width="150px"><center><img src="http://www.kramos.ru/images/callkeeper_l_0.png" height="30px" width="30px"/> ️ Телефон</center></th>
                             <th height=1px; width="150px"><center><img src="http://files.softicons.com/download/web-icons/standard-portfolio-icons-by-aha-soft/png/256x256/write%20email.png" height="30px" width="30px"/> Имейл</center></th>
-                            <th height=1px; width="380px"><center>Изберете действие <img src="http://pictures.dealer.com/f/familydodgecllc/0281/6975fca73c3c66c83dc8e2ad37a6f355x.jpg" height="30px" width="30px"/></center></th>
+                            <th height=1px; width="200px"><center>Изберете действие <img src="http://pictures.dealer.com/f/familydodgecllc/0281/6975fca73c3c66c83dc8e2ad37a6f355x.jpg" height="30px" width="30px"/></center></th>
                         </tr>
 
 
@@ -75,9 +75,11 @@ echo '<tr>';
         echo $customer_data -> email;
     echo '</td>';
     echo '<td>';
-        echo '<a href="/edit/customer/'.$customer_data -> id.'" class="btn btn-info"><img src="http://www.somuca.es/dms/ICONOS/Edit_Yes.png" height="30px" width="30px"/>  Редактирай</a>';
+        echo '<a href="/sales/'.$customer_data -> id.'" class="btn btn-info btn-xs"><img src="" width="25px"/>Продажби</a>';
         echo '       ';
-        echo '<a href="/delete/customer/'.$customer_data -> id.'" class="btn btn-danger"><img src="http://images.easyfreeclipart.com/1633/delete-button-png-images-amp-pictures-becuo-1633633.png" height="30px" width="30px"/>   Изтрий</a>';
+        echo '<a href="/edit/customer/'.$customer_data -> id.'" class="btn btn-info btn-xs"><img src="http://www.somuca.es/dms/ICONOS/Edit_Yes.png" width="25px"/>  </a>';
+        echo '       ';
+        echo '<a href="/delete/customer/'.$customer_data -> id.'" class="btn btn-danger btn-xs"><img src="http://images.easyfreeclipart.com/1633/delete-button-png-images-amp-pictures-becuo-1633633.png" width="25px"/>   </a>';
     echo '</td>';
 echo '</tr>';
 }

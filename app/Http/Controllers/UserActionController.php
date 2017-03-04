@@ -45,11 +45,27 @@ class UserActionController extends Controller
     }
 
     public function editUser($id){
-        $customer = Customer::find($id);
+
+        $customers = Customer::find($id);
+        return view('editCustomer', [
+            'customer' => $customers
+        ]);
+
+    }
+
+    public function saveEditUser(Request $request){
+        $customer = Customer::find($request->input('customer_id'));
+        $customer -> first_name = $request->input('first_name');
+        $customer -> last_name =  $request->input('last_name');
+        $customer -> gender = $request->input('gender');
+        $customer -> telephone = $request->input('telephone');
+        $customer -> email = $request->input('email');
         $customer -> update();
+
         return view('success', [
             'message' => 'Записът е успешно редактиран!'.'</br>'.'</br>'.
-                '<img src="https://media.tenor.co/images/b910eef482ebf7f15aa6da0cc648f827/raw" height="400" width="800"/>'
+                '<img src="https://media.tenor.co/images/b910eef482ebf7f15aa6da0cc648f827/raw" width="800"/>'
         ]);
+
     }
 }
