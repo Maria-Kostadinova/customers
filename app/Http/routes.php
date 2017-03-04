@@ -26,3 +26,4 @@ Route::get('/delete/customer/{id}', 'UserActionController@deleteUser');
 Route::get('/edit/customer/{id}', 'UserActionController@editUser');
 Route::post('/edit/customer/','UserActionController@saveEditUser')->name('edit.customer');
 Route::get('/sales/{id}', 'UserRelationController@displaySales');
+Route::get('/customer/{id}/company/', 'UserRelationController@displayCompany');

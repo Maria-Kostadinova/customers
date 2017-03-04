@@ -13,8 +13,9 @@ class Sales extends Model
      */
     public $timestamps = false;
 
-    public function user(){
-        return $this->belongsTo('Customer');
+    public function customer(){
+        return $this->belongsTo('App\Customer');
+        //прави релация one-to-many за да изведе името на customer (first_name), а не неготово id (customer_id)
 }
 
 }
