@@ -75,7 +75,7 @@ echo '<tr>';
         echo $customer_data -> email;
     echo '</td>';
     echo '<td>';
-        echo '<a href="" class="btn btn-info"><img src="http://www.somuca.es/dms/ICONOS/Edit_Yes.png" height="30px" width="30px"/>  Редактирай</a>';
+        echo '<a href="/edit/customer/'.$customer_data -> id.'" class="btn btn-info"><img src="http://www.somuca.es/dms/ICONOS/Edit_Yes.png" height="30px" width="30px"/>  Редактирай</a>';
         echo '       ';
         echo '<a href="/delete/customer/'.$customer_data -> id.'" class="btn btn-danger"><img src="http://images.easyfreeclipart.com/1633/delete-button-png-images-amp-pictures-becuo-1633633.png" height="30px" width="30px"/>   Изтрий</a>';
     echo '</td>';

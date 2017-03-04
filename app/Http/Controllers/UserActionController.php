@@ -43,4 +43,13 @@ class UserActionController extends Controller
                 '<img src="https://media.giphy.com/media/7ILa7CZLxE0Ew/giphy.gif" height="400" width="800"/>'
         ]);
     }
+
+    public function editUser($id){
+        $customer = Customer::find($id);
+        $customer -> update();
+        return view('success', [
+            'message' => 'Записът е успешно редактиран!'.'</br>'.'</br>'.
+                '<img src="https://media.tenor.co/images/b910eef482ebf7f15aa6da0cc648f827/raw" height="400" width="800"/>'
+        ]);
+    }
 }

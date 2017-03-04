@@ -23,3 +23,4 @@ Route::get('/FAQ', 'FAQController@index');
 Route::get('/check', 'UserActionController@index');
 Route::post('/add/customer', 'UserActionController@addUser')->name('add.customer');
 Route::get('/delete/customer/{id}', 'UserActionController@deleteUser');
+Route::get('/edit/customer/{id}', 'UserActionController@editUser');
