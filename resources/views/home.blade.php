@@ -43,13 +43,13 @@
                     <br/><br/>
                     <table class="table-bordered">
                         <tr>
-                            <th height=1px; width="150px"><center><img src="http://www.clipartkid.com/images/736/student-and-staff-id-cards-36sJLR-clipart.png" height="30px" width="30px"/>  ИД</center></th>
-                            <th height=1px; width="150px"><center><img src="http://www.axialis.com/objects/ip_icon_03_FolderPictures.png" height="30px" width="30px"/>  Име</center></th>
-                            <th height=1px; width="150px"><center><img src="https://cdn3.iconfinder.com/data/icons/Iconshock_Folders/png/NORMAL/512/text_512.png" height="30px" width="30px"/>  Фамилия</center></th>
-                            <th height=1px; width="150px"><center><img src="https://openclipart.org/image/2400px/svg_to_png/245232/3d-Isometric-Intertwined-Gender-Hearts.png&disposition=attachment" height="30px" width="30px"/>  Пол</center></th>
-                            <th height=1px; width="150px"><center><img src="http://www.kramos.ru/images/callkeeper_l_0.png" height="30px" width="30px"/> ️ Телефон</center></th>
-                            <th height=1px; width="150px"><center><img src="http://files.softicons.com/download/web-icons/standard-portfolio-icons-by-aha-soft/png/256x256/write%20email.png" height="30px" width="30px"/> Имейл</center></th>
-                            <th height=1px; width="200px"><center>Изберете действие <img src="http://pictures.dealer.com/f/familydodgecllc/0281/6975fca73c3c66c83dc8e2ad37a6f355x.jpg" height="30px" width="30px"/></center></th>
+                            <th class="text-center" height=1px; width="150px"><img src="http://www.clipartkid.com/images/736/student-and-staff-id-cards-36sJLR-clipart.png" height="30px" width="30px"/>  ИД</th>
+                            <th class="text-center" height=1px; width="150px"><img src="http://www.axialis.com/objects/ip_icon_03_FolderPictures.png" height="30px" width="30px"/>  Име</th>
+                            <th class="text-center" height=1px; width="150px"><img src="https://cdn3.iconfinder.com/data/icons/Iconshock_Folders/png/NORMAL/512/text_512.png" height="30px" width="30px"/>  Фамилия</th>
+                            <th class="text-center" height=1px; width="150px"><img src="https://openclipart.org/image/2400px/svg_to_png/245232/3d-Isometric-Intertwined-Gender-Hearts.png&disposition=attachment" height="30px" width="30px"/>  Пол</th>
+                            <th class="text-center" height=1px; width="150px"><img src="http://www.kramos.ru/images/callkeeper_l_0.png" height="30px" width="30px"/> ️ Телефон</center></th>
+                            <th class="text-center" height=1px; width="150px"><img src="http://files.softicons.com/download/web-icons/standard-portfolio-icons-by-aha-soft/png/256x256/write%20email.png" height="30px" width="30px"/> Имейл</th>
+                            <th class="text-center" height=1px; width="200px">Изберете действие <img src="http://pictures.dealer.com/f/familydodgecllc/0281/6975fca73c3c66c83dc8e2ad37a6f355x.jpg" height="30px" width="30px"/></th>
                         </tr>
 
 
@@ -75,9 +75,10 @@ echo '<tr>';
         echo $customer_data -> email;
     echo '</td>';
     echo '<td>';
-    echo '<a href="/customer/'.$customer_data -> id.'/company/" class="btn btn-info btn-xs"><img src="" width="25px"/>Компания</a>';
-        echo '<a href="/sales/'.$customer_data -> id.'" class="btn btn-info btn-xs"><img src="" width="25px"/>Продажби</a>';
-        echo '<a href="/edit/customer/'.$customer_data -> id.'" class="btn btn-info btn-xs"><img src="http://www.somuca.es/dms/ICONOS/Edit_Yes.png" width="25px"/>  </a>';
+     echo '<a href="/customer/'.$customer_data -> id.'/product/" class="btn btn-primary btn-xs"><img src="http://graduados.udh.edu.pe/images/imageempresa.png" width="25px"/></a>';
+    echo '<a href="/customer/'.$customer_data -> id.'/company/" class="btn btn-primary btn-xs"><img src="http://graduados.udh.edu.pe/images/imageempresa.png" width="25px"/></a>';
+        echo '<a href="/sales/'.$customer_data -> id.'" class="btn btn-warning btn-xs"><img src="http://www.freeiconspng.com/uploads/money-icon-22.png" width="25px"/></a>';
+        echo '<a href="/edit/customer/'.$customer_data -> id.'" class="btn btn-success btn-xs"><img src="http://www.somuca.es/dms/ICONOS/Edit_Yes.png" width="25px"/>  </a>';
         echo '<a href="/delete/customer/'.$customer_data -> id.'" class="btn btn-danger btn-xs"><img src="http://images.easyfreeclipart.com/1633/delete-button-png-images-amp-pictures-becuo-1633633.png" width="25px"/>   </a>';
     echo '</td>';
 echo '</tr>';

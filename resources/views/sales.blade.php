@@ -2,11 +2,11 @@
 
 @section('content')
     <div class="container">
-        <h3>Relation One to Many - One customer can have many buys</h3>
-        <table class="table-bordered">
+        <h3><u>Relation One to Many - One customer can have many buys</u></h3>
+        <table class="table-bordered" width="600px">
             <tr>
-                <th>Име на клиент: </th>
-                <th>Сума:</th>
+                <th class="text-center">Име на клиент: </th>
+                <th class="text-center">Сума на направените продажби:</th>
             </tr>
             @php
                 foreach ($sale as $sale_data) {
@@ -16,7 +16,7 @@
                         echo $sale_data -> customer -> last_name;
                     echo '</td>';
                     echo '<td align="center">';
-                         echo $sale_data -> cost;
+                         echo $sale_data -> cost.' лв'.'.';
                     echo '</td>';
                 echo '</tr>';
                 }

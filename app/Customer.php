@@ -12,4 +12,12 @@ class Customer extends Model
      * @var bool
      */
     public $timestamps = false;
+
+    public function company(){
+        return $this->hasOne('App\Company');
+    }
+
+    public function product(){
+        return $this->belongsToMany('Product');
+    }
 }

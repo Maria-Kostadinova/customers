@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Company;
+use App\Customer;
 use App\Http\Controllers\Controller;
 use App\Sales;
 use Illuminate\Http\Request;
@@ -25,9 +26,17 @@ class UserRelationController extends Controller
 
     public function displayCompany($id){
 
-        $companies = Company::where('customer_id', $id)->first();
+        $customer = Customer::find($id);
         return view('company', [
-            'company' => $companies //ключ-стойност
+            'customer' => $customer //ключ-стойност
+        ]);
+    }
+
+    public function displayProduct($id){
+
+        $customer = Customer::find($id);
+        return view('product', [
+            'customer' => $customer //ключ-стойност
         ]);
     }
 }

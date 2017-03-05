@@ -40,7 +40,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="http://www.oilsearchfoundation.org/wp-content/uploads/2012/08/OSHF_Logo_Icon_200x200.png" height="26px" width="29px"/> <b> My Customer</b>‍
+                    <img src="http://www.oilsearchfoundation.org/wp-content/uploads/2012/08/OSHF_Logo_Icon_200x200.png" height="26px" width="29px"/> ‍
                 </a>
             </div>
 
